@@ -1,0 +1,65 @@
+@import 'normalize.css';
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --while: #ffffff;
+  --text-color: #ccc;
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Tahoma;
+  src: url("/assets/fonts/TikTokDisplayFont-Bold.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Tahoma;
+  src: url("/assets/fonts/TikTokFont-Bold.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Tahoma;
+  src: url("/assets/fonts/TikTokFont-Regular.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Tahoma;
+  src: url("/assets/fonts/TikTokFont-Semibold.woff2");
+  font-weight: 700;
+}
+body {
+  font-family: "Tahoma";
+  font-size: 1.6rem;
+}
+
+button,
+input [tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--black);
+  text-decoration: none;
+}
+
+body .tippy-box {
+  background-color: #373535;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 10px 6px;
+}
+body .tippy-arrow {
+  background-color: #373535;
+}

@@ -1,0 +1,35 @@
+.preview {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px #ccc;
+    color: #ffffff;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.avatar {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+.item-info {
+    color: #302b2b;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nickname {
+    font-size: 1.6rem;
+}
+.icon {
+    color: #21cc60;
+}
+.name {
+    font-weight: 300;
+    font-size: 1.6rem;
+}

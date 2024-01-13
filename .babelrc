@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "~": "./src"
+                    //  dan den src
+                    // vd import App from '~/App'
+                }
+            }
+        ]
+    ]
+}

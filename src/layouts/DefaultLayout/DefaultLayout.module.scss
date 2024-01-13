@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    max-width: 100%;
+    width: 1150px;
+    min-height: 600px;
+    // background-color: red;
+    margin-top: var(--default-layout-header-height);
+    display: flex;
+}
+.content {
+    border-radius: 20px;
+    margin-left: 356px;
+    flex: 1;
+    background-color: #2d2b2d;
+    min-height: 1000px;
+}

@@ -1,0 +1,71 @@
+.wrapper {
+  font-family: Tahoma;
+  min-width: 100px;
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: var(--while);
+  border: 1px solid transparent;
+  user-select: none;
+}
+.wrapper + .wrapper {
+  margin-left: 8px;
+}
+.wrapper.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.icon + .title,
+.title + .icon {
+  margin-left: 8px;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(22, 24, 0, 0.2);
+}
+.rounded:hover {
+  box-shadow: 0 2px 8px rgba(22, 24, 0, 0.4);
+  background-color: rgba(24, 24, 35, 0.03);
+}
+
+.primary {
+  box-shadow: none;
+  background-color: var(--primary);
+  color: var(--while);
+  border-color: var(--primary);
+}
+.primary:hover {
+  background-color: #bc2626;
+  cursor: pointer;
+}
+
+.small {
+  min-width: 88px;
+  padding: 4px 16px;
+}
+
+.large {
+  min-width: 112px;
+  padding: 16px 40px;
+}
+
+.outline {
+  color: var(--primary);
+  border-color: currentColor;
+}
+.outline:hover {
+  background-color: rgba(232, 223, 225, 0.86);
+}
+
+.text:hover {
+  text-decoration: underline;
+}
