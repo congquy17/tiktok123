@@ -1,9 +1,11 @@
 .wrapper {
-    // margin-top: 58px;
+    margin-top: 2px;
+
     position: fixed;
     top: 62px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 356px;
     min-height: 1000px;
-    padding: 20px 0 2px;
+    padding: 20px 30px;
+    border-radius: 25px;
 }

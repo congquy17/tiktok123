@@ -254,7 +254,7 @@ function Header() {
             <div className={cx('inner')}>
                 <Link to={config.home}>
                     <div className={cx('logo')}>
-                        <Image src={images.logo} alt="titok"></Image>
+                        <Image className={cx('logo1')} src={images.logo1} alt="titok"></Image>
                     </div>
                 </Link>
                 {/* Search */}

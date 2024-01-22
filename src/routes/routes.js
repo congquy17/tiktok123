@@ -7,11 +7,13 @@ import Search from '~/page/Search';
 import config from '~/config';
 import Live from '~/page/Live';
 import Feedback from '~/page/Feedback';
+import AccountVideo from '~/components/AccountVideo';
 //  dùng để hiển thị public
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.following, component: Following },
     { path: config.routes.profile, component: Profile },
+    { path: config.routes.profileVideo, component: AccountVideo, layout: HeaderOnly },
     { path: config.routes.live, component: Live },
     { path: config.routes.feedback, component: Feedback },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },

@@ -8,9 +8,9 @@
     height: var(--default-layout-header-height, 60x);
     width: 100%;
     box-shadow: 0 1px 1px 1px rgb(168, 162, 162);
-    background-color: white;
+    background-color: rgb(86, 85, 85);
+    z-index: 1000;
 }
-
 .inner {
     width: var(--default-layout-width);
     height: 100%;
@@ -18,8 +18,10 @@
     justify-content: space-between;
     align-items: center;
 }
-.logo {
+.logo1 {
     cursor: pointer;
+    width: 90px;
+    height: 90px;
 }
 
 // 2 action
@@ -42,7 +44,7 @@
     cursor: pointer;
     background-color: transparent;
     font-size: 2.2rem;
-    color: rgb(22, 24, 35);
+    color: rgb(255, 255, 255);
     padding: 4px 12px;
     cursor: pointer;
 }

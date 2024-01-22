@@ -4,15 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faHeart, faLink, faMessage } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import videos from '~/assets/videos/2.mp4';
+import AccountVideo from '~/components/AccountVideo';
+import { Link } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 const cx = classNames.bind(styles);
 function Content({ data }) {
+    // const history = useHistory();
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
                 <img className={cx('img-header')} src={data.avatar}></img>
                 <div className={cx('sub-header')}>
                     <h2 className={cx('name')}>
-                        Cong Quy Dep Trai <span className={cx('subname')}>#Fa</span>
+                        {data.full_name} <span className={cx('subname')}>#Fa</span>
                     </h2>
                     <p className={cx('fami')}>#Family #OurDZ</p>
                     <div>
@@ -34,19 +38,21 @@ function Content({ data }) {
 
                 <div className={cx('actions')}>
                     <div className={cx('icon-action')}>
-                        <FontAwesomeIcon icon={faHeart} />
+                        <FontAwesomeIcon className={cx('icon-single')} icon={faHeart} />
                         <p>137.954K</p>
                     </div>
                     <div className={cx('icon-action')}>
-                        <FontAwesomeIcon icon={faMessage} />
-                        <p>135K</p>
+                        <Link to={`/video/@${data.nickname}`}>
+                            <FontAwesomeIcon className={cx('icon-single')} icon={faMessage} />
+                            <p>135K</p>
+                        </Link>
                     </div>
                     <div className={cx('icon-action')}>
-                        <FontAwesomeIcon icon={faBookmark} />
+                        <FontAwesomeIcon className={cx('icon-single')} icon={faBookmark} />
                         <p>137</p>
                     </div>
                     <div className={cx('icon-action')}>
-                        <FontAwesomeIcon icon={faLink} />
+                        <FontAwesomeIcon className={cx('icon-single')} icon={faLink} />
                         <p>137</p>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 function Home() {
     const [video, setVideo] = useState([]);
     useEffect(() => {
-        fetch('https://tiktok.fullstack.edu.vn/api/users/search?q=hoa&type=less')
+        fetch('https://tiktok.fullstack.edu.vn/api/users/search?q=hoaa&type=less')
             .then((res) => res.json())
             .then((res) => {
                 setVideo(res.data);
@@ -17,7 +17,7 @@ function Home() {
     return (
         <div>
             {video && Array.isArray(video) && video.map((video) => <Content key={video.id} data={video} />)}
-            <p className={cx('more-btn')}> See all</p>
+            {/* <p className={cx('more-btn')}> See all</p> */}
         </div>
     );
 }
